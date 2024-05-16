@@ -5,19 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quote of the Day</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="fw-bold ">Quote of the Day</h1>
-        <p>Press the button below to receive a random quote!</p>
-        <button id="new-quote" class="btn btn-primary" onclick="showNewQuote()">New Quote</button>
-        <div id="quote-box">
-            <p id="quote">"You miss 100% of the shots you don't take."</p>
-            <p id="author">-- Wayne Gretzky</p>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="text-center">
+                    <h1 class="display-4 mb-4">Quote of the Day</h1>
+                    <p class="lead">Press the button below to receive a random quote!</p>
+                    <button id="new-quote" class="btn btn-primary btn-lg mb-4" onclick="showNewQuote()">New Quote</button>
+                </div>
+                <div id="quote-box" class="card p-4 shadow-sm">
+                    <blockquote class="blockquote text-center mb-0">
+                        <p id="quote" class="mb-4 animate__animated">"You miss 100% of the shots you don't take."</p>
+                        <footer id="author" class="blockquote-footer animate__animated">Wayne Gretzky</footer>
+                    </blockquote>
+                </div>
+            </div>
         </div>
     </div>
 
-    <script src="./js/index.js"></script>
+    <script src="./js/index.js" defer></script>
 </body>
 </html>
